@@ -161,10 +161,6 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1.75rem;
 }
 
-.ctext-secondary *{
-    color: var(--secondary);
-}
-
 .pdt-header{
     padding: 1rem 0;
     width: 100%;
@@ -174,7 +170,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Section Hero Start */
 .section-hero{
-    min-height: 90vh;
+    min-height: 95vh;
     /* outline: solid 1px red; */
     position: relative;
     padding-top: 4rem;
@@ -244,7 +240,12 @@ h1, h2, h3, h4, h5, h6{
 /* Section Statistic Start*/
 .section-statistic{
     min-height: 90vh;
-    background: var(--white);
+    background-image: url('../img/img-circle-1.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.ctext-secondary *{
+    color: var(--secondary);
 }
 /* Section Statistic End*/
 
@@ -253,11 +254,12 @@ h1, h2, h3, h4, h5, h6{
 /* Section Timeline Start*/
 .section-timeline{
     min-height: 90vh;
-    background: var(--white);
+    background-image: url('../img/img-circle-2.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .pds-path{
-    /* background-color: yellow; */
     overflow: hidden;
 }
 
@@ -302,7 +304,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .pds-path .path-item:nth-child(even){
-    /* background-color: green; */
     padding: 1rem 2rem 1rem 1rem;
     text-align: right;
 }
@@ -370,8 +371,78 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
     bottom:10%;
 }
 
-.section-footer{
+.section-footer .top-wrapper{
     border-top:solid 1px var(--border-default);
+    border-bottom:solid 1px var(--border-default);
+}
+
+.list-footer-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list-footer-menu li{
+    padding: 1rem 0;
+}
+.list-footer-menu a{
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+.list-footer-menu a:hover{
+    color: var(--text-link);
+}
+
+.call-center-box{
+    background-color: var(--bg-default);
+    border-radius: 1rem;
+    background-image: url('../img/img-street-lamps.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.call-center-box .list-footer-menu li{
+    padding: .5rem 0;
+}
+
+.quote-box{
+    background-color: var(--b100);
+}
+.quote-box .bi{
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.quote-author{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-default);
+    font-size: 0.75rem;
+    position: relative;
+    padding-top: 1rem;
+}
+.quote-author::before{
+    display: block;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social-media a{
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-right: 3rem;
+}
+.social-media a:nth-last-child(){
+    margin-right: 0;
+}
+.social-media a:hover{
+    color: var(--text-link);
 }
 
 .book-frame{
