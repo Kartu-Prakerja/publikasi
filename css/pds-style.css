@@ -141,10 +141,12 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: var(--text-default);
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
+    color: var(--text-default);
 }
 
 .pdt-header{
@@ -168,16 +170,24 @@ h1, h2, h3, h4, h5, h6{
     z-index: 1;
 }
 
-.section-hero::before{
+.section-hero::before,
+.section-forms::before{
     display: block;
     content: '';
     width: 100%;
     height: 50%;
     position: absolute;
-    bottom:0;
     left:0;
     z-index: 0;
     background: linear-gradient(0deg, #FFFFFF 21.93%, rgba(255, 255, 255, 0) 100%);
+}
+.section-hero::before{
+    bottom:0;
+}
+
+.section-forms::before{
+    top: 0;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .text-clip-img{
@@ -231,7 +241,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .pds-path{
-    background-color: yellow;
+    /* background-color: yellow; */
+    overflow: hidden;
 }
 
 .pds-path li{
@@ -239,8 +250,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .path-item{
-    padding: 1rem;
     position: relative;
+    /* outline: solid 1px red; */
+    width: 50%;
 }
 
 .path-item::before,
@@ -258,12 +270,53 @@ h1, h2, h3, h4, h5, h6{
 
 .path-item::after{
     width: 4px;
-    height: 100%;
-    background: var(--danger);
+    height: calc(100% - 16px);
+    background: var(--border-default);
+    position: absolute;
+    z-index: 1;
+    top:36px;
+}
+.pds-path .path-item:nth-child(odd){
+    transform: translate(100%);
+    padding: 1rem 1rem 1rem 2rem;
 }
 
 .pds-path .path-item:nth-child(even){
-    background-color: green;
+    /* background-color: green; */
+    padding: 1rem 2rem 1rem 1rem;
     text-align: right;
 }
+.pds-path .path-item:nth-child(odd):before{
+    position: absolute;
+    left: -12px;
+}
+.pds-path .path-item:nth-child(odd):after{
+    left: -2px;
+}
+.pds-path .path-item:nth-child(even):before{
+    position: absolute;
+    right: -12px;
+}
+.pds-path .path-item:nth-child(even):after{
+    right: -2px;
+}
 /* Section Timeline End*/
+
+.section-forms{
+    position: relative;
+    /* Gradient/b100 - o100 */
+background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
+}
+
+.section-forms > div{
+    position: relative;
+    z-index: 4;
+}
+
+.box-forms{
+    background-color: var(--white);
+    /* Card/Larger Shadow */
+    box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 16px 32px -8px rgba(1, 24, 48, 0.1);
+    border-radius: 2rem;
+    padding: 32px;
+}
