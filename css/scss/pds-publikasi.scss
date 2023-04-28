@@ -1,0 +1,318 @@
+
+@import "pds-style";
+
+.pdt-header{
+    padding: 1rem 0;
+    width: 100%;
+    position: absolute;
+    z-index: 234;
+}
+
+.header-fixed{
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    top:0;
+    left: 0;
+    box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 8px 16px -8px rgba(1, 24, 48, 0.2);
+}
+
+/* Section Hero Start */
+.section-hero{
+    min-height: 95vh;
+    position: relative;
+    padding-top: 4rem;
+    background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
+
+    &> div{
+        position: relative;
+        z-index: 1;
+    }
+
+    &:before{
+        bottom:0;
+    }
+}
+
+.section-hero,
+.section-forms{
+    &:before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        left:0;
+        z-index: 0;
+        background: linear-gradient(0deg, #FFFFFF 21.93%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+.section-forms{
+    &:before{
+        top: 0;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+}
+
+.text-clip-img{
+    background: url('../img/photo-collage.jpg');
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    font-size: 18.75rem;
+    line-height: 19rem;
+}
+
+.scroll-hint{
+    outline: solid 1px red;
+    display: flex;
+    /* -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    writing-mode: lr-tb; */
+    position: relative;
+    padding-left: 24px;
+}
+.scroll-hint{
+    &:before{
+        content: '';
+        display: block;
+        width: 24px;
+        height: 1px;
+        background: var(--danger);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+/* Section Hero End */
+
+// 
+/* Section Statistic Start*/
+.section-statistic{
+    min-height: 90vh;
+    background-image: url('../img/img-circle-1.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.ctext-secondary *{
+    color: var(--secondary);
+}
+/* Section Statistic End*/
+
+/* Section Timeline Start*/
+.section-timeline{
+    min-height: 90vh;
+    background-image: url('../img/img-circle-2.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.pds-path{
+    overflow: hidden;
+}
+
+.path-item{
+    position: relative;
+    width: 50%;
+    &::before,
+    &::after{
+        display: block;
+        content: '';
+    }
+
+    &::before{
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        border: solid 4px var(--border-default);
+    }
+
+    &::after{
+        width: 4px;
+        height: calc(100% - 16px);
+        background: var(--border-default);
+        position: absolute;
+        z-index: 1;
+        top:36px;
+    }
+
+    &:nth-child(odd){
+        transform: translate(100%);
+        padding: 1rem 1rem 1rem 2rem;
+        &::before{
+            position: absolute;
+            left: -12px;
+        }
+        &::after{
+            left: -2px;
+        }
+    }
+
+    &:nth-child(even){
+        padding: 1rem 2rem 1rem 1rem;
+        text-align: right;
+        &::before{
+            position: absolute;
+            right: -12px;
+        }
+
+        &::after{
+            right: -2px;
+        }
+    }
+}
+
+.path-item,
+.path-end{
+    p{
+        color: var(--text-secondary);
+    }
+}
+
+/* Section Timeline End*/
+
+.section-forms{
+    position: relative;
+    /* Gradient/b100 - o100 */
+background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
+}
+
+.section-forms > div{
+    position: relative;
+    z-index: 4;
+}
+
+.box-forms{
+    background-color: var(--white);
+    /* Card/Larger Shadow */
+    box-shadow: 0px 0px 0px 1px rgba(214, 219, 224, 0.2), 0px 16px 32px -8px rgba(1, 24, 48, 0.1);
+    border-radius: 2rem;
+    padding: 32px;
+}
+
+.star{
+    width: 48px;
+    height: 48px;
+    background-image: url('../img/img-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.star-1{
+    left:10%;
+    top:20%;
+}
+.star-2{
+    right:10%;
+    bottom:20%;
+}
+
+.star-3{
+    right:0%;
+    top:0%;
+}
+
+.star-4{
+    left:0%;
+    bottom:10%;
+}
+
+
+.section-footer .top-wrapper{
+    border-top:solid 1px var(--border-default);
+    border-bottom:solid 1px var(--border-default);
+}
+
+.list-footer-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list-footer-menu li{
+    padding: 1rem 0;
+}
+.list-footer-menu a{
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+.list-footer-menu a:hover{
+    color: var(--text-link);
+}
+
+.call-center-box{
+    background-color: var(--bg-default);
+    border-radius: 1rem;
+    background-image: url('../img/img-street-lamps.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.call-center-box .list-footer-menu li{
+    padding: .5rem 0;
+}
+
+.quote-box{
+    background-color: var(--b100);
+}
+.quote-box .bi{
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.quote-author{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-default);
+    font-size: 0.75rem;
+    position: relative;
+    padding-top: 1rem;
+}
+.quote-author::before{
+    display: block;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social-media a{
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-right: 3rem;
+    &::nth-last-child{
+        margin-right: 0;
+    }
+}
+
+.social-media a:hover{
+    color: var(--text-link);
+}
+
+.book-frame{
+    padding-left:1.5rem;
+    position: relative;
+}
+.book-frame:before{
+    display: block;
+    content: '';
+    width: 1.5rem;
+    height: 100%;
+    background-color: var(--o400);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.book-frame img{
+    border-radius: 0 1rem 1rem 0;
+}
+
