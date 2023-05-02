@@ -56,7 +56,7 @@
 }
 
 .text-clip-img{
-    background: url('../img/photo-collage.jpg');
+    background: url('../img/photo-collage.jpg') 20px 20px;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
@@ -64,6 +64,8 @@
     font-weight: 900;
     font-size: 18.75rem;
     line-height: 19rem;
+    text-shadow: 10px 1px 1px rgba(0, 0, 0, 0.1);
+
 }
 
 .scroll-hint{
@@ -316,3 +318,57 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
     border-radius: 0 1rem 1rem 0;
 }
 
+
+/* media query */
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .text-clip-img{
+        font-size: 12.75rem;
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .text-clip-img{
+        font-size: 8.75rem;
+    }
+
+    .path-item{
+        width: 100%;
+
+        &:nth-child(odd){
+            transform: translate(0%);
+            padding: 1rem 1rem 1rem 2rem;
+            &::before{
+                position: absolute;
+                left: 0px;
+            }
+            &::after{
+                left: 10px;
+            }
+        }
+    
+        &:nth-child(even){
+            padding: 1rem 1rem 1rem 2rem;
+            text-align: left;
+            &::before{
+                position: absolute;
+                left: 0px;
+            }
+    
+            &::after{
+                left: 10px;
+                right: auto;
+            }
+        }
+    }
+
+    #getEbook, .section-list-ebook {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+ }
