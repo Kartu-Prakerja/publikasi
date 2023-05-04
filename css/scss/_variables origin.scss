@@ -17,110 +17,51 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
-
-
-/* Neutral  */
-$neutral-900: #0F151B;
-$neutral-800: #151D25;
-$neutral-700: #1B2430;
-$neutral-600: #202C3A;
-$neutral-500: #263444;
-$neutral-400: #67717C;
-$neutral-300: #939AA1;
-$neutral-200: #BEC2C7;
-$neutral-100: #E9EBEC;
-
-/* Stone  */
-$stone-900: #2F363D;
-$stone-800: #414A54;
-$stone-700: #535F6A;
-$stone-600: #647381;
-$stone-500: #768798;
-$stone-400: #9FABB7;
-$stone-300: #BBC3CB;
-$stone-200: #D6DBE0;
-$stone-100: #F1F3F5;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
-  "100": $neutral-100,
-  "200": $neutral-200,
-  "300": $neutral-300,
-  "400": $neutral-400,
-  "500": $neutral-500,
-  "600": $neutral-600,
-  "700": $neutral-700,
-  "800": $neutral-800,
-  "900": $neutral-900
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
 ) !default;
-
-$neutrals: (
-  "neutral-100": $neutral-100,
-  "neutral-200": $neutral-200,
-  "neutral-300": $neutral-300,
-  "neutral-400": $neutral-400,
-  "neutral-500": $neutral-500,
-  "neutral-600": $neutral-600,
-  "neutral-700": $neutral-700,
-  "neutral-800": $neutral-800,
-  "neutral-900": $neutral-900
-) !default;
-
-$stones: (
-  "stone-100": $stone-100,
-  "stone-200": $stone-200,
-  "stone-300": $stone-300,
-  "stone-400": $stone-400,
-  "stone-500": $stone-500,
-  "stone-600": $stone-600,
-  "stone-700": $stone-700,
-  "stone-800": $stone-800,
-  "stone-900": $stone-900
-) !default;
-
-
 // scss-docs-end gray-colors-map
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #2A72C7 !default;
-$orange:  #F05E00 !default;
-$yellow:  #F2BA01 !default;
-$green:   #2AC743 !default;
-$red:     #DF2020 !default;
-$purple:  #952AC7 !default;
-$teal:   #2491A9 !default;
-$neutral: #263444 !default;
-$stone:   #768798 !default;
-
-// origin bootstrap
-$pink:    #d63384 !default;
+$blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
-
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
-  //  custom pds
   "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
-  "red":        $red,
-  "purple":     $purple,
-  "teal":      $teal,
-  "neutral":    $neutral,
-  "stone":      $stone,
-  
-  // origin bootstrap
-  "indigo":     $indigo,
-  "white":      $white,
+  "teal":       $teal,
   "cyan":       $cyan,
   "black":      $black,
-  "pink":       $pink,
+  "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
@@ -135,88 +76,16 @@ $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
-/*Blue*/
-$blue-900: #112E50;
-$blue-800: #173F6D;
-$blue-700: #1D508B;
-$blue-600: #2461A9;
-$blue-500: #2A72C7;
-$blue-400: #6A9CD8;
-$blue-300: #95B9E3;
-$blue-200: #BFD5EE;
-$blue-100: #EAF1F9;
+$blue-100: tint-color($blue, 80%) !default;
+$blue-200: tint-color($blue, 60%) !default;
+$blue-300: tint-color($blue, 40%) !default;
+$blue-400: tint-color($blue, 20%) !default;
+$blue-500: $blue !default;
+$blue-600: shade-color($blue, 20%) !default;
+$blue-700: shade-color($blue, 40%) !default;
+$blue-800: shade-color($blue, 60%) !default;
+$blue-900: shade-color($blue, 80%) !default;
 
-/*Orange*/
-$orange-900: #602600;
-$orange-800: #843400;
-$orange-700: #A84200;
-$orange-600: #CC5000;
-$orange-500: #F05E00;
-$orange-400: #F58E4D;
-$orange-300: #F8AF80;
-$orange-200: #FBCFB3;
-$orange-100: #FEEFE5;
-
-/* Yellow */
-$yellow-900: #614A00;
-$yellow-800: #856601;
-$yellow-700: #A98201;
-$yellow-600: #CE9E01;
-$yellow-500: #F2BA01;
-$yellow-400: #F6CF4D;
-$yellow-300: #F9DD80;
-$yellow-200: #FBEAB3;
-$yellow-100: #FEF8E6;
-
-/* Green  */
-$green-900: #11501B;
-$green-800: #176D25;
-$green-700: #1D8B2F;
-$green-600: #24A939;
-$green-500: #2AC743;
-$green-400: #6AD87B;
-$green-300: #95E3A1;
-$green-200: #BFEEC7;
-$green-100: #EAF9EC;
-
-
-/* Red  */
-$red-900: #590D0D;
-$red-800: #7B1212;
-$red-700: #9C1616;
-$red-600: #BE1B1B;
-$red-500: #DF2020;
-$red-400: #E96363;
-$red-300: #EF8F8F;
-$red-200: #F5BCBC;
-$red-100: #FCE9E9;
-
-/* Purple  */
-$purple-900: #3C1150;
-$purple-800: #52176D;
-$purple-700: #681D8B;
-$purple-600: #7F24A9;
-$purple-500: #952AC7;
-$purple-400: #B56AD8;
-$purple-300: #CA95E3;
-$purple-200: #DFBFEE;
-$purple-100: #F4EAF9;
-
-/* Topaz / Teal  */
-$teal-900: #114450;
-$teal-800: #175E6D;
-$teal-700: #1D788B;
-$teal-600: #2491A9;
-$teal-500: #2AABC7;
-$teal-400: #6AC4D8;
-$teal-300: #95D5E3;
-$teal-200: #BFE6EE;
-$teal-100: #EAF7F9;
-
-
-
-
-// Origin Bootstrap
 $indigo-100: tint-color($indigo, 80%) !default;
 $indigo-200: tint-color($indigo, 60%) !default;
 $indigo-300: tint-color($indigo, 40%) !default;
@@ -227,6 +96,16 @@ $indigo-700: shade-color($indigo, 40%) !default;
 $indigo-800: shade-color($indigo, 60%) !default;
 $indigo-900: shade-color($indigo, 80%) !default;
 
+$purple-100: tint-color($purple, 80%) !default;
+$purple-200: tint-color($purple, 60%) !default;
+$purple-300: tint-color($purple, 40%) !default;
+$purple-400: tint-color($purple, 20%) !default;
+$purple-500: $purple !default;
+$purple-600: shade-color($purple, 20%) !default;
+$purple-700: shade-color($purple, 40%) !default;
+$purple-800: shade-color($purple, 60%) !default;
+$purple-900: shade-color($purple, 80%) !default;
+
 $pink-100: tint-color($pink, 80%) !default;
 $pink-200: tint-color($pink, 60%) !default;
 $pink-300: tint-color($pink, 40%) !default;
@@ -236,6 +115,56 @@ $pink-600: shade-color($pink, 20%) !default;
 $pink-700: shade-color($pink, 40%) !default;
 $pink-800: shade-color($pink, 60%) !default;
 $pink-900: shade-color($pink, 80%) !default;
+
+$red-100: tint-color($red, 80%) !default;
+$red-200: tint-color($red, 60%) !default;
+$red-300: tint-color($red, 40%) !default;
+$red-400: tint-color($red, 20%) !default;
+$red-500: $red !default;
+$red-600: shade-color($red, 20%) !default;
+$red-700: shade-color($red, 40%) !default;
+$red-800: shade-color($red, 60%) !default;
+$red-900: shade-color($red, 80%) !default;
+
+$orange-100: tint-color($orange, 80%) !default;
+$orange-200: tint-color($orange, 60%) !default;
+$orange-300: tint-color($orange, 40%) !default;
+$orange-400: tint-color($orange, 20%) !default;
+$orange-500: $orange !default;
+$orange-600: shade-color($orange, 20%) !default;
+$orange-700: shade-color($orange, 40%) !default;
+$orange-800: shade-color($orange, 60%) !default;
+$orange-900: shade-color($orange, 80%) !default;
+
+$yellow-100: tint-color($yellow, 80%) !default;
+$yellow-200: tint-color($yellow, 60%) !default;
+$yellow-300: tint-color($yellow, 40%) !default;
+$yellow-400: tint-color($yellow, 20%) !default;
+$yellow-500: $yellow !default;
+$yellow-600: shade-color($yellow, 20%) !default;
+$yellow-700: shade-color($yellow, 40%) !default;
+$yellow-800: shade-color($yellow, 60%) !default;
+$yellow-900: shade-color($yellow, 80%) !default;
+
+$green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+$green-500: $green !default;
+$green-600: shade-color($green, 20%) !default;
+$green-700: shade-color($green, 40%) !default;
+$green-800: shade-color($green, 60%) !default;
+$green-900: shade-color($green, 80%) !default;
+
+$teal-100: tint-color($teal, 80%) !default;
+$teal-200: tint-color($teal, 60%) !default;
+$teal-300: tint-color($teal, 40%) !default;
+$teal-400: tint-color($teal, 20%) !default;
+$teal-500: $teal !default;
+$teal-600: shade-color($teal, 20%) !default;
+$teal-700: shade-color($teal, 40%) !default;
+$teal-800: shade-color($teal, 60%) !default;
+$teal-900: shade-color($teal, 80%) !default;
 
 $cyan-100: tint-color($cyan, 80%) !default;
 $cyan-200: tint-color($cyan, 60%) !default;
@@ -257,6 +186,54 @@ $blues: (
   "blue-700": $blue-700,
   "blue-800": $blue-800,
   "blue-900": $blue-900
+) !default;
+
+$indigos: (
+  "indigo-100": $indigo-100,
+  "indigo-200": $indigo-200,
+  "indigo-300": $indigo-300,
+  "indigo-400": $indigo-400,
+  "indigo-500": $indigo-500,
+  "indigo-600": $indigo-600,
+  "indigo-700": $indigo-700,
+  "indigo-800": $indigo-800,
+  "indigo-900": $indigo-900
+) !default;
+
+$purples: (
+  "purple-100": $purple-100,
+  "purple-200": $purple-200,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900
+) !default;
+
+$pinks: (
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900
+) !default;
+
+$reds: (
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900
 ) !default;
 
 $oranges: (
@@ -295,30 +272,6 @@ $greens: (
   "green-900": $green-900
 ) !default;
 
-$reds: (
-  "red-100": $red-100,
-  "red-200": $red-200,
-  "red-300": $red-300,
-  "red-400": $red-400,
-  "red-500": $red-500,
-  "red-600": $red-600,
-  "red-700": $red-700,
-  "red-800": $red-800,
-  "red-900": $red-900
-) !default;
-
-$purples: (
-  "purple-100": $purple-100,
-  "purple-200": $purple-200,
-  "purple-300": $purple-300,
-  "purple-400": $purple-400,
-  "purple-500": $purple-500,
-  "purple-600": $purple-600,
-  "purple-700": $purple-700,
-  "purple-800": $purple-800,
-  "purple-900": $purple-900
-) !default;
-
 $teals: (
   "teal-100": $teal-100,
   "teal-200": $teal-200,
@@ -331,30 +284,6 @@ $teals: (
   "teal-900": $teal-900
 ) !default;
 
-
-// Bootsrtap origin 
-$pinks: (
-  "pink-100": $pink-100,
-  "pink-200": $pink-200,
-  "pink-300": $pink-300,
-  "pink-400": $pink-400,
-  "pink-500": $pink-500,
-  "pink-600": $pink-600,
-  "pink-700": $pink-700,
-  "pink-800": $pink-800,
-  "pink-900": $pink-900
-) !default;
-$indigos: (
-  "indigo-100": $indigo-100,
-  "indigo-200": $indigo-200,
-  "indigo-300": $indigo-300,
-  "indigo-400": $indigo-400,
-  "indigo-500": $indigo-500,
-  "indigo-600": $indigo-600,
-  "indigo-700": $indigo-700,
-  "indigo-800": $indigo-800,
-  "indigo-900": $indigo-900
-) !default;
 $cyans: (
   "cyan-100": $cyan-100,
   "cyan-200": $cyan-200,

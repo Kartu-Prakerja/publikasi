@@ -4,44 +4,55 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+/* Neutral  */
+/* Stone  */
+/*Blue*/
+/*Orange*/
+/* Yellow */
+/* Green  */
+/* Red  */
+/* Purple  */
+/* Topaz / Teal  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #2A72C7;
+  --bs-orange: #F05E00;
+  --bs-yellow: #F2BA01;
+  --bs-green: #2AC743;
+  --bs-red: #DF2020;
+  --bs-purple: #952AC7;
+  --bs-teal: #2491A9;
+  --bs-neutral: #263444;
+  --bs-stone: #768798;
   --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
+  --bs-white: #fff;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
-  --bs-white: #fff;
+  --bs-pink: #d63384;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
+  --bs-gray-100: #E9EBEC;
+  --bs-gray-200: #BEC2C7;
+  --bs-gray-300: #939AA1;
+  --bs-gray-400: #67717C;
+  --bs-gray-500: #263444;
+  --bs-gray-600: #202C3A;
+  --bs-gray-700: #1B2430;
+  --bs-gray-800: #151D25;
+  --bs-gray-900: #0F151B;
+  --bs-primary: #2A72C7;
   --bs-secondary: #6c757d;
-  --bs-success: #198754;
+  --bs-success: #2AC743;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
+  --bs-warning: #F2BA01;
+  --bs-danger: #DF2020;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-rgb: 42, 114, 199;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
+  --bs-success-rgb: 42, 199, 67;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
+  --bs-warning-rgb: 242, 186, 1;
+  --bs-danger-rgb: 223, 32, 32;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
@@ -68,10 +79,10 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-link-color: #2A72C7;
+  --bs-link-hover-color: #225b9f;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: #FEF8E6;
 }
 
 .clearfix::after {
@@ -82,7 +93,7 @@
 
 .text-bg-primary {
   color: #fff !important;
-  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(42, 114, 199, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -91,8 +102,8 @@
 }
 
 .text-bg-success {
-  color: #fff !important;
-  background-color: RGBA(25, 135, 84, var(--bs-bg-opacity, 1)) !important;
+  color: #000 !important;
+  background-color: RGBA(42, 199, 67, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-info {
@@ -102,12 +113,12 @@
 
 .text-bg-warning {
   color: #000 !important;
-  background-color: RGBA(255, 193, 7, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(242, 186, 1, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-danger {
   color: #fff !important;
-  background-color: RGBA(220, 53, 69, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(223, 32, 32, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-light {
@@ -121,10 +132,10 @@
 }
 
 .link-primary {
-  color: #0d6efd !important;
+  color: #2A72C7 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #0a58ca !important;
+  color: #225b9f !important;
 }
 
 .link-secondary {
@@ -135,10 +146,10 @@
 }
 
 .link-success {
-  color: #198754 !important;
+  color: #2AC743 !important;
 }
 .link-success:hover, .link-success:focus {
-  color: #146c43 !important;
+  color: #55d269 !important;
 }
 
 .link-info {
@@ -149,17 +160,17 @@
 }
 
 .link-warning {
-  color: #ffc107 !important;
+  color: #F2BA01 !important;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
+  color: #f5c834 !important;
 }
 
 .link-danger {
-  color: #dc3545 !important;
+  color: #DF2020 !important;
 }
 .link-danger:hover, .link-danger:focus {
-  color: #b02a37 !important;
+  color: #b21a1a !important;
 }
 
 .link-light {
