@@ -502,3 +502,8 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
     --bs-btn-disabled-bg: #95B9E3;
     --bs-btn-disabled-border-color: #95B9E3;
   }
+
+  .text-bg-warning{
+    color: var(--text-default)!important;
+  }
+  
