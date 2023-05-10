@@ -1,6 +1,29 @@
 @import "pds-style";
 
 
+/* The animation code */
+@keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    } 
+
+}
+
+@keyframes scroll_animate {
+    0%   {bottom : 0px;}
+    50%   {bottom : 10px;}
+    100% {bottom: 0px;}
+}
+
 .pdt-header{
     padding: 1rem 0;
     width: 100%;
@@ -83,22 +106,6 @@
 
 }
 
-@keyframes animate {
-    0%, 100% {
-      background-position: left top;
-    }
-    25%{
-      background-position: right bottom;
-     }
-    50% {
-      background-position: left bottom;
-    }
-    75% {
-      background-position: right top;
-    } 
-
-}
-
 
 
 .scroll-hint{
@@ -131,14 +138,6 @@
         margin-top: auto;
         margin-bottom: auto;
     }
-}
-
-
-/* The animation code */
-@keyframes scroll_animate {
-    0%   {bottom : 0px;}
-    50%   {bottom : 10px;}
-    100% {bottom: 0px;}
 }
 
 /* Section Hero End */
@@ -182,6 +181,8 @@
         height: 24px;
         border-radius: 12px;
         border: solid 4px var(--border-default);
+        background-color: #fff;
+        transition: 1s background-color;
     }
 
     &::after{
@@ -215,6 +216,14 @@
 
         &::after{
             right: -2px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        &::before{
+            background: var(--primary);;
+            transition: 1s background-color;
         }
     }
 
