@@ -248,6 +248,14 @@
         left: 0;
         transform: translateY(-4px);
     }
+
+    &:hover {
+        cursor: pointer;
+        &::before{
+            background: var(--primary);;
+            transition: 1s background-color;
+        }
+    }
 }
 
 @media (min-width:576px) {
