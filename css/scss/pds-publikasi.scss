@@ -552,3 +552,9 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
     color: var(--text-default)!important;
   }
   
+  .link-primary {
+    color: var(--primary) !important;
+  }
+  .link-primary:hover, .link-primary:focus {
+    color: var(--b600) !important;
+  }
