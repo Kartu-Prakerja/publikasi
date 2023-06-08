@@ -8,6 +8,19 @@ $(window).scroll(function() {
     } else {
         $('header').removeClass("header-fixed");
     }
+
+    // for scroll-top trigger
+    if (scroll >= 400) {
+        $('.scroll-top').addClass("is-show");
+    } else {
+        $('.scroll-top').removeClass("is-show");
+    }
+
+    // Scroll to top 
+    $(".scroll-top").on("click", function() {
+        $(window).scrollTop(0);
+    });
+
 });
 
 /* form on submit */
