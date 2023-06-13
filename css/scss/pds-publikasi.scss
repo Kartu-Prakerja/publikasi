@@ -566,7 +566,7 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
     
  }
 
- 
+
 
  @media (min-width: 576px) { 
     .text-clip-img{
@@ -590,6 +590,11 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
         bottom: 24px;
         right: 24px;
     }
+
+    .text-column-lg-3{
+        column-count: 3;
+        column-gap: 2rem;
+     }
  }
 
  @media (min-width: 1200px) { 
