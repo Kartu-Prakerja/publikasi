@@ -50,11 +50,31 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="pdt-header">
+    <!-- <header class="pdt-header">
         <div class="container px-3 px-md-0">
             <div class="d-flex justify-content-between align-items-center"><a href="https://www.prakerja.go.id/"><img loading="lazy" src="img/logo-prakerja.svg" alt="Logo Prakerja"></a><a href="#getEbook" class="btn btn-primary">Dapatkan E-book</a></div>
         </div>
+    </header> -->
+
+    <header class="pdt-header">
+        <div class="container px-3 px-md-0">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="https://www.prakerja.go.id/"><img src="img/logo-prakerja.svg" alt="Prakerja"></a>
+                <ul class="d-flex align-items-center navbar-custom">
+                    <li class="nav-item md-hide me-0"><a class="nav-link is-active me-2" href="#">ID</a></li>
+                    <li class="nav-separator m-hide mx-2"></li>
+                    <li class="nav-item md-hide ms-0"><a class="nav-link ms-2" href="#">EN</a></li>
+                    <li class="nav-item md-hide"><a href="#getEbook" class="btn btn-primary">Dapatkan E-book</a></li>
+                    <li class="nav-item md-show">
+                        <div class="menu burger-menu" data-menu="13">
+                            <div class="icon"></div>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+        </div>    
     </header>
+
     <main>
         <section class="section-hero d-flex align-items-center">
             <div class="container py-md-5 py-5 px-4 px-md-0">
@@ -368,40 +388,51 @@
                     </div>
                 </div>
                 <div class="row my-5">
-                    <div class="col-lg-2 mb-4 mb-lg-0">
-                        <h6>Prakerja</h6>
-                        <ul class="list-footer-menu">
-                            <li><a href="https://www.prakerja.go.id/">Beranda</a></li>
-                            <li><a href="https://www.prakerja.go.id/tentang-prakerja">Tentang Prakerja</a></li>
-                            <li><a href="https://apply.workable.com/kartu-prakerja/" target="_blank">Karir</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 mb-4 mb-lg-0">
-                        <h6>Peserta</h6>
-                        <ul class="list-footer-menu">
-                            <li><a href="https://dashboard.prakerja.go.id/daftar" target="_blank">Daftar</a></li>
-                            <li><a href="https://dashboard.prakerja.go.id/masuk" target="_blank">Masuk</a></li>
-                            <li><a href="https://www.prakerja.go.id/tanya-jawab">Tanya Jawab</a></li>
-                            <li><a href="https://www.prakerja.go.id/tren-rekrutmen">Tren Rekrutmen</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 mb-4 mb-lg-0">
-                        <h6>Ekosistem</h6>
-                        <ul class="list-footer-menu">
-                            <li><a href="https://www.prakerja.go.id/lembaga-pelatihan">Lembaga Pelatihan</a></li>
-                            <li><a href="https://www.prakerja.go.id/lembaga-pelatihan#list-logo-lp">Mitra Lembaga Pelatihan</a></li>
-                            <li><a href="https://www.prakerja.go.id/lembaga-pelatihan#lp-question">FAQ Lembaga Pelatihan</a></li>
-                            <li><a href="https://www.prakerja.go.id/lembaga-pelatihan/kriteria-standar-pelatihan">Kriteria Standar Pelatihan</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 mb-4 mb-lg-0">
-                        <h6>Lainnya</h6>
-                        <ul class="list-footer-menu">
-                            <li><a href="https://www.prakerja.go.id/artikel">Artikel</a></li>
-                            <li><a href="https://www.prakerja.go.id/publikasi">Publikasi</a></li>
-                            <li><a href="https://www.prakerja.go.id/kebijakan-privasi">Kebijakan Privasi</a></li>
-                            <li><a href="https://www.prakerja.go.id/syarat-ketentuan">Syarat Ketentuan</a></li>
-                        </ul>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-3 mb-4 mb-lg-0">
+                                <h6>Prakerja</h6>
+                                <ul class="list-footer-menu">
+                                    <li><a href="https://www.prakerja.go.id/">Beranda</a></li>
+                                    <li><a href="https://www.prakerja.go.id/tentang-prakerja">Tentang Prakerja</a></li>
+                                    <li><a href="https://apply.workable.com/kartu-prakerja/" target="_blank">Karir</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 mb-4 mb-lg-0">
+                                <h6>Peserta</h6>
+                                <ul class="list-footer-menu">
+                                    <li><a href="https://dashboard.prakerja.go.id/daftar" target="_blank">Daftar</a></li>
+                                    <li><a href="https://dashboard.prakerja.go.id/masuk" target="_blank">Masuk</a></li>
+                                    <li><a href="https://www.prakerja.go.id/tanya-jawab">Tanya Jawab</a></li>
+                                    <li><a href="https://www.prakerja.go.id/tren-rekrutmen">Tren Rekrutmen</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 mb-4 mb-lg-0">
+                                <h6>Ekosistem</h6>
+                                <ul class="list-footer-menu">
+                                    <li><a href="https://www.prakerja.go.id/lembaga-pelatihan">Lembaga Pelatihan</a></li>
+                                    <li><a href="https://www.prakerja.go.id/lembaga-pelatihan#list-logo-lp">Mitra Lembaga Pelatihan</a></li>
+                                    <li><a href="https://www.prakerja.go.id/lembaga-pelatihan#lp-question">FAQ Lembaga Pelatihan</a></li>
+                                    <li><a href="https://www.prakerja.go.id/lembaga-pelatihan/kriteria-standar-pelatihan">Kriteria Standar Pelatihan</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 mb-4 mb-lg-0">
+                                <h6>Lainnya</h6>
+                                <ul class="list-footer-menu">
+                                    <li><a href="https://www.prakerja.go.id/artikel">Artikel</a></li>
+                                    <li><a href="https://www.prakerja.go.id/publikasi">Publikasi</a></li>
+                                    <li><a href="https://www.prakerja.go.id/kebijakan-privasi">Kebijakan Privasi</a></li>
+                                    <li><a href="https://www.prakerja.go.id/syarat-ketentuan">Syarat Ketentuan</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-12 mb-4 mb-lg-0">
+                                <h6>Bahasa</h6>
+                                <div class="btn-group" role="group" aria-label="Large button group">
+                                    <a href="index.html" class="btn btn-primary">ID</a>
+                                    <a href="index.html" class="btn btn-outline-primary">EN</a>
+                                  </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="call-center-box p-4">
