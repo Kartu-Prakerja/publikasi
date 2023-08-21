@@ -1,5 +1,46 @@
 @import "pds-style";
 
+:root {
+    --flag-size: 20px;
+  }
+  .web-lang a {
+    text-decoration: none;
+    // opacity: 0.5;
+    color: var(--text-default);
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    // border: solid 1px red;
+  }
+  .web-lang a:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  .web-lang a.is-active {
+    opacity: 1;
+    color: var(--b500);
+    background-color: rgba(#2A72C7, .1);
+    
+  }
+  .web-lang .separator {
+    color: var(--text-default);
+    opacity: 0.5;
+  }
+  .web-lang a span {
+    display: inline-flex;
+    width: var(--flag-size);
+    height: var(--flag-size);
+    overflow: hidden;
+    border: solid 1px var(--border-default);
+    border-radius: 16px;
+    padding: 0;
+  }
+  .web-lang span img {
+    display: block;
+    height: var(--flag-size);
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
 
 /* The animation code */
 @keyframes animate {
@@ -45,8 +86,13 @@
     min-height: 95vh;
     position: relative;
     padding-top: 4rem;
+    background-color: var(--b100);
+    background-image: url("../img/img-map-indonesia.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     // outline: solid 1px red;
-    background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
+    // background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
 
     &> div{
         position: relative;
@@ -93,7 +139,7 @@
 
 .text-clip-img{
     margin:0;
-    font-size: 8.75rem;
+    font-size: 8rem;
     color: rgba(225,225,225, .01);
     background-image: url("../img/cover-laporan2022.jpg");
     background-repeat: repeat;
@@ -273,8 +319,9 @@
 
 .section-forms{
     position: relative;
+    background-color: var(--b100);
     /* Gradient/b100 - o100 */
-background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
+// background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #F8EEF7 42.86%, #FDEDF3 57.14%, #FFEDEE 71.43%, #FFEEE9 85.71%, #FEEFE5 100%);
 }
 
 .section-forms > div{
@@ -393,7 +440,7 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
     a{
         font-size: 1.5rem;
         color: var(--text-secondary);
-        margin-right: 3rem;
+        margin-right: 2rem;
         padding: 0 .5rem;
         
         &:last-child{
@@ -600,6 +647,12 @@ background: linear-gradient(90deg, #EAF1F9 0%, #EEF0FA 14.29%, #F3EFF9 28.57%, #
  @media (min-width: 1200px) { 
     .text-clip-img{
         font-size: 18.75rem;
+    }
+ }
+
+ .ebook-form{
+    .form_15iP5{
+        background-color: yellow!important;
     }
  }
 
